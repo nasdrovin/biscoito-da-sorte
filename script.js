@@ -40,7 +40,8 @@ function pickMessage() {
 }
 
 function pressEnter(event) {
-    if(event.key == 'Enter' && screen1.classList.contains('hide')) {
+    if(event.key == 'Enter') {
         toggleScreen()
+        pickMessage()
     }
 } 
